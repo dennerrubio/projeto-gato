@@ -1,0 +1,66 @@
+/*FONTES E TEXTOS*/
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fonte-subtitulo{
+    font-family: Brush Script MT,cursive;
+    color: #186db3;
+}
+h1, h2, h5{
+    text-align:center;
+    color: #be701b;
+}
+h1, .fonte-subtitulo{
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h5{
+    display: inline-block;
+}
+footer{
+    text-align: center;
+}
+.monitoramento{
+    color: rgb(233, 229, 220);
+}
+.monitoramento:hover{
+    color:  #be701b;
+}
+hr {
+    background-color: rgb(224, 220, 211);
+    height: 1px;
+    border: 0px;
+}
+figcaption {
+    background-color: #be701b;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    width: 340px;
+}
+/*BACKGROUND*/
+body { 
+    background-image: url(calico.jpg);
+}
+.fundo-branco {
+background-color: white;
+width: 70%;
+padding: 20px;
+margin: auto;
+max-width: 1200px;
+min-width: 500px;
+}
+/*DIVS*/
+.quadro1, .quadro2{
+    display: inline-block;
+    vertical-align: top;
+}
+.quadro1{
+    width: 35%;
+    min-width: 420px;
+}
+.quadro2{
+    width: 64%;
+    float: inline-end;
+}
