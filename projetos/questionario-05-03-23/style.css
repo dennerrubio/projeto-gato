@@ -10,7 +10,7 @@
 }
 
 :root {
-  --marrom: #261C13;
+  --marrom: #1b1510;
 }
 
 /* MENU INICIAL */
@@ -105,7 +105,7 @@ main {
 }
 
 .fundosecundario {
-background-color: var(--marrom);
+background-image: linear-gradient(#2c1e16, var(--marrom));
 }
 
 aside {
@@ -130,18 +130,35 @@ section {
   justify-content: left;
   background-color: white;
   padding: 10px;
-  height: 800px;
+  min-height: 800px;
 }
 
 li {
   font-size: 24px;
   list-style-position: inside;
+  color: var(--marrom);
 }
 
 h3 {
   font-size: 36px;
   font-weight: 900;
   margin-bottom: 25px;
+  color: rgb(185, 119, 119);
+}
+
+#setor1{
+  width: 90%;
+}
+
+#setor1 p{
+  width: 90%;
+  font-size: 24px;
+  color: var(--marrom);
+  margin-bottom: 60px;
+}
+
+#setor2 li {
+  color: white;
 }
 
 /* FORMULARIO */
