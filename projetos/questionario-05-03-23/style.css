@@ -9,6 +9,10 @@
   font-weight: 500;
 }
 
+:root {
+  --marrom: #261C13;
+}
+
 /* MENU INICIAL */
 
 #menu {
@@ -100,6 +104,10 @@ main {
   margin: auto;
 }
 
+.fundosecundario {
+background-color: var(--marrom);
+}
+
 aside {
   display: flex;
   align-items: center;
@@ -119,10 +127,21 @@ aside img {
 section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: green;
+  justify-content: left;
+  background-color: white;
   padding: 10px;
   height: 800px;
+}
+
+li {
+  font-size: 24px;
+  list-style-position: inside;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 25px;
 }
 
 /* FORMULARIO */
@@ -145,7 +164,7 @@ section {
 
 footer {
   display: flex;
-  background-color: black;
+  background-color: var(--marrom);
   color: white;
   min-height: 50px;
   justify-content: center;
