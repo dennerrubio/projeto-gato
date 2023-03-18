@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaq.css" />
     <title>Questionário Nami - 05-03-23</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
           <a href="#pag1">Amor</a>
           <a href="#pag2">Neutralidade</a>
           <a href="#pag3">Ódio</a>
-          <a href="#form">Final</a>
+          <a href="#form">Formulário</a>
         </nav>
       </div>
       <!-- IMAGENS E TEXTOS DO HEADER -->
@@ -36,6 +37,14 @@
       </aside>
       <section id="pag1">
         <div id="setor1">
+          <h3>Uma análise sobre o comportamento de felinos tricolores</h3>
+          <p>
+            Se você recebeu esse formulário é possível que você tenha tido uma
+            experiência negativa com o meu gato - a Nami -, logo teremos uma
+            breve descrição sobre a sua personalidade e abriremos um
+            questionário para analisar o comportamento dela com a finalidade de
+            coletar feedback.
+          </p>
           <h3>Coisas que sabemos que a Nami gosta:</h3>
           <ol>
             <li>Whiskas Sachê</li>
@@ -82,16 +91,59 @@
             <li>Ela odeia que você não advinhe quando ela sente fome</li>
             <li>Mafalda</li>
           </ul>
+          <h3>Conclusão</h3>
+          <p>
+            A Nami é conhecida por ser vingativa, misteriosa e não sabemos se
+            ela tem algum afeto por seus companheiros animais dentro da casa.
+            Porém ela é nossa amiga e aprendemos a conviver com ela, e ela
+            aprendeu a conviver com a Mafalda, eu acho.
+          </p>
         </div>
       </section>
       <!-- FORMULÁRIO -->
       <section id="form" class="fundosecundario">
-        <div id="final">
-          <h3>Conclusão</h3>
-          <p>A Nami é conhecida por ser vingativa, misteriosa e não sabemos se ela tem algum afeto por seus companheiros animais dentro da casa. Porém ela é nossa amiga e aprendemos a conviver com ela, e ela aprendeu a conviver com a Mafalda, eu acho.</p>
+        <form id="final">
+          <h3>Formulário da Nami</h3>
+          <p> Agora iremos coletar algumas informações sobre suas experiências com a Nami, lembrando que este é um questionário totalmente seguro,
+              a Nami provavelmente não vai ficar sabendo, por via das dúvidas, não comente deste questionário com ninguém.
+          </p>
+          <fieldset>
+            <legend>Como você descreveria a sua relação com a Nami?</legend>
+               <input type="radio" id="amorosa" name="relacao" value="amorosa"><label for="amorosa">Amorosa</label>
+               <input type="radio" id="neutra" name="relacao" value="neutra"><label for="neutra">Neutra</label>
+               <input type="radio" id="complicada" name="relacao" value="complicada"><label for="complicada">Complicada</label>
+               <input type="radio" id="medo" name="relacao" value="medo"><label for="medo">Eu sinto medo constante da Nami</label>
+            </fieldset>
+            <fieldset>
+              <legend>A Nami em algum momento já atacou você?</legend>
+             <input type="radio" id="sim1" name="ataque" value="sim1"><label for="sim1">Sim, mais de uma vez</label>
+             <input type="radio" id="sim2" name="ataque" value="sim2"><label for="sim2">Sim, uma vez apenas</label>
+             <input type="radio" id="nao" name="ataque" value="nao"><label for="nao">Não</label>
+              <input type="radio" id="medo2" name="ataque" value="medo2"><label for="medo2">Eu sinto medo constante da Nami</label>
+          </fieldset>
+          <fieldset>
+             <legend>Você denunciaria a Nami para as autoridades?</legend>
+             <input type="radio" id="sim3" name="denuncia" value="sim3"><label for="sim3">Sim</label>
+             <input type="radio" id="nao2" name="denuncia" value="nao2"><label for="nao2">Não</label>
+             <input type="radio" id="medo3" name="denuncia" value="medo3"><label for="medo3">Eu sinto medo constante da Nami</label>
+         </fieldset>
+         <fieldset>
+             <legend>Selecione caracteristicas que você ache que definam a Nami:</legend>
+             <input type="checkbox" name="caixinhas" id="atenciosa" value="atenciosa"><label for="atenciosa">Atenciosa</label>
+             <input type="checkbox" name="caixinhas" id="soberba" value="soberba"><label for="soberba">Soberba</label>
+             <input type="checkbox" name="caixinhas" id="fada" value="fada"><label for="fada">Fada Sensata</label>
+             <input type="checkbox" name="caixinhas" id="comunista" value="comunista"><label for="comunista">Comunista</label>
+             <input type="checkbox" name="caixinhas" id="macabra" value="macabra"><label for="macabra">Macabra</label>
+             <input type="checkbox" name="caixinhas" id="vingativa" value="vingativa"><label for="vingativa">Vingativa</label>
+             <input type="checkbox" name="caixinhas" id="safada" value="safada"><label for="safada">Safada</label>
+             <input type="checkbox" name="caixinhas" id="resiliente" value="resiliente"><label for="resiliente">Resiliente</label>
+         </fieldset>
+          <input type="submit" value="Enviar formulário">   
+          <input type="reset" value="Resetar formulário">   
+        </form>
       </section>
     </main>
-    <div id="imagemfundo"></div>
+    <div id="imagemfundo"><!--IMAGEM FO FUNDO--></div>
     <footer>
       <p>Desenvolvido por Denner Rubio, 05-03-23. Monitorado pela Nami.</p>
     </footer>

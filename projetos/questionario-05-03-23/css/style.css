@@ -48,7 +48,7 @@ nav a:hover {
 /* HEADER */
 
 header {
-  background-image: url(images/fundo2.jpg);
+  background-image: url(../images/fundo2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -133,16 +133,18 @@ section {
   min-height: 800px;
 }
 
-li {
+li,
+p {
   font-size: 24px;
   list-style-position: inside;
   color: var(--marrom);
+  margin: 15px 0px;
 }
 
 h3 {
   font-size: 36px;
   font-weight: 900;
-  margin-bottom: 25px;
+  margin: 25px 0px;
   color: rgb(185, 119, 119);
 }
 
@@ -167,7 +169,7 @@ h3 {
 }
 
 #imagemfundo {
-  background-image: url(images/fundo3.jpg);
+  background-image: url(../images/fundo3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -183,5 +185,10 @@ footer {
   min-height: 50px;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+}
+
+footer p {
+  font-size: 16px;
+  text-align: center;
+  color: white;
 }
