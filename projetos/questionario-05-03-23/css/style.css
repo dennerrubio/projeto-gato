@@ -11,6 +11,8 @@
 
 :root {
   --marrom: #1b1510;
+  --rosa: rgb(185, 119, 119);
+  --rosa2: rgb(236, 216, 216);
 }
 
 /* MENU INICIAL */
@@ -145,14 +147,14 @@ h3 {
   font-size: 36px;
   font-weight: 900;
   margin: 25px 0px;
-  color: rgb(185, 119, 119);
+  color: var(--rosa);
 }
 
 #setor1 {
   width: 90%;
 }
 
-#setor2 li {
+#setor2 li, #setor2 p {
   color: white;
 }
 
@@ -191,4 +193,48 @@ footer p {
   font-size: 16px;
   text-align: center;
   color: white;
+}
+
+fieldset {
+  padding: 10px;
+  margin: 15px 0px;
+}
+
+legend,
+label {
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+legend {
+  color: var(--rosa);
+}
+
+label {
+  color: white;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  display: block;
+  margin: auto;
+  width: 70%;
+  max-width: 600px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--rosa);
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-image: linear-gradient(white, var(--rosa2));
+  color: var(--rosa);
+  border: 1px solid var(--rosa);
+  box-shadow: 0px 0px 10px var(--rosa);
+  transition: background-image 0.3s, box-shadow 0.3s;
 }

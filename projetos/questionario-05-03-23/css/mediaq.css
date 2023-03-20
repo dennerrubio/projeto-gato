@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 600px) {
+  * {
+    transition: 0.3s;
+  }
+
   #menu {
     display: block;
   }
@@ -49,6 +53,17 @@
 
   .fundosecundario {
     background-image: linear-gradient(var(--marrom), var(--marrom));
+  }
+
+  #final p {
+    font-size: 18px;
+  }
+
+  legend,
+  label,
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 14px;
   }
 
   footer p {
